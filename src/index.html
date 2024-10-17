@@ -3,11 +3,345 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./output.css" />
     <title>Capstone Tailwind</title>
   </head>
-  <body>
-    <h2>bai tap
-    </h2>
+  <body class="bg-[url('./images/body-bg.svg')] bg-cover bg-no-repeat">
+    <!-- header -->
+    <header class=" header bg-white shadow-3xl lg:bg-transparent p-6">
+      <div class="flex justify-between items-center mx-auto max-w-[1200px] px-3 ">
+        <div class="order-none">
+          <a href="">
+            <img src="./images/logo.svg"  alt="logo" />
+          </a>
+        </div>
+
+        <label class="text-[#888] text-2xl lg:hidden cursor-pointer" for="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+
+        <ul class=" text-center hidden w-full flex-[0_0_100%] lg:order-1 lg:flex lg:w-auto lg:flex-auto lg:justify-center lg:space-x-5 list-none items-center ">
+        
+          <li
+          >
+            <a class=" text-base p-2 hover:text-[rgb(254,96,25)] transition-all relative home-active lg:inline-block" href="">Home</a>
+          </li>
+          <li>
+            <a class=" text-base p-2 hover:text-[rgb(254,96,25)] lg:inline-block" href="">About</a>
+          </li>
+          <li>
+            <a class=" text-base p-2 hover:text-[rgb(254,96,25)] lg:inline-block" href="">Blog</a>
+          </li>
+          <li>
+            <a class=" text-base p-2 hover:text-[rgb(254,96,25)] lg:inline-block" href="">Features</a>
+          </li>
+          <li>
+            <a class=" text-base p-2 hover:text-[rgb(254,96,25)] lg:inline-block" href="">How It Works</a>
+          </li>
+          <li>
+            <a class=" text-base  p-2 hover:text-[rgb(254,96,25)] lg:inline-block" href="">Pages
+              <i class="  fa-solid fa-angle-down"></i>
+            </a>
+          </li>
+          <li>
+            <a class=" text-base p-2 hover:text-[rgb(254,96,25)] lg:inline-block" href="">Contact</a>
+          </li>
+        </ul>
+        <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
+          <button class="text-sm font-medium rounded-full shadow-2xl bg-[#fffffffa] hover:shadow-sm px-8  p-3">
+             <a href="">Sing Up Now</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- banner -->
+    <section class="py-16 relative">
+      <div class="max-w-[1200px] mx-auto px-3">
+        <div class=" lg:flex lg:justify-center lg:items-center">
+          <div class=" w-full px-4 lg:w-[50%] lg:col-6">
+            <h1 class="text-4xl lg:text-5xl font-bold leading-tight">
+              Scale design & dev operations with Avocode Enterprise
+            </h1>
+            <p class="mt-6 text-[#8888] text-xl">
+              A fully integrated suite of authentication & authoriz products,
+              Stytch’s platform removes the headache of.
+            </p>
+            <button
+              class="text-sm rounded-full shadow-xl bg-[#fffffffa] hover:shadow-sm px-9 p-5 mt-8"
+            >
+              Download The Theme
+            </button>
+          </div>
+          <div class="w-full lg:w-[50%] px-4 lg:col-6">
+            <img
+              class="w-full object-contain"
+              src="./images/banner-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <img
+        class="absolute max-w-[30%] w-full -z-[1] right-0 -top-28"
+        src="./images/banner-shape.svg"
+        alt=""
+      />
+    </section>
+    <!-- ///// -->
+    <section class="relative py-16">
+      <img
+        src="./images/feature-shape.svg"
+        class="absolute left-0 top-0 -translate-y-1/2 -z-[1]"
+        alt=""
+      />
+      <div class="max-w-[1200px] m-auto px-3">
+        <div class=" text-center lg:flex lg:justify-between lg:gap-72 lg:text-start m-0">
+          <div class="w-full lg:w-5/12 px-3 ">
+            <h2 class="text-4xl font-bold">
+              The Highlighting Part Of Our Solution
+            </h2>
+          </div>
+          <div class="w-full mt-6 lg:w-5/12 lg:mt-0 font-normal px-3">
+            <p class="text-[#8888] text-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas
+              sollicitudin .
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-7 mt-10">
+          <div
+            class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+          >
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Live Caption</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-1.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Smart Reply</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-2.svg"
+                alt=""
+              />
+            </span>
+          </div>
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Sound Amplifier</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-3.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Gesture Navigation</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-4.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Dark Theme</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-5.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Privacy Controls</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-6.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Location Controls</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-7.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Security Updates</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-8.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Focus Mode</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-9.svg"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="meta">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-bold">Family Link</h3>
+              <p class="text-[#8888] mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+            <span class="mt-4 icon">
+              <img
+                class="object-contain"
+                src="./images/feature-icon-10.svg"
+                alt=""
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+     <section class="py-16">
+      <div class="m-auto max-w-[1200px] px-3">
+        <!-- 1 -->
+        <div class=" lg:flex lg:items-center lg:justify-between ">
+          <div class="lg:order-2 lg:flex-none lg:w-3/5">
+            <div class="p-4 ">
+              <div>
+                <img class="w-full object-contain" src="./images/sells-by-country.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class=" mt-6 lg:px-6 lg:order-1 lg:mt-0">
+            <div class="mx-auto w-full lg:max-w-sm">
+              <h2 class="  text-3xl md:text-[38px] lg:text-4xl font-bold">Prevent failure from to impacting your reputation
+              </h2>
+              <p class="mt-4 text-[#8888]" >Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.</p>
+              <ul class="inline-block mt-8  ">
+                <li class="flex bg-[#FDBEA7] px-4 p-4 mb-4 rounded cursor-pointer"><img class="mr-3" src="./images/drop.svg" alt="">Habit building essential choose habit</li>
+                <li class="flex px-4  mb-4 rounded cursor-pointer "> <img class="mr-3" src="./images/brain.svg" alt="">Get an overview of Habit Calendars.</li>
+                <li class="flex px-4 mb-4 rounded cursor-pointer "> <img class="mr-3" src="./images/timer.svg" alt="">Start building with Habitify platform</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class=" lg:flex flex-wrap lg:items-center lg:justify-between lg:mt-0 ">
+          <div class="lg:flex-none lg:w-3/5 lg:px-4 ">
+               <div class="relative ">
+             <img class="w-full object-contain" src="./images/collaboration.png" alt="">
+             <img class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2" src="./images/shape.svg" alt="">
+             </div>
+         </div>
+         <div class=" mt-6 lg:w-2/5 lg:px-4 ">
+           <div class="ml-auto mr-auto w-full lg:max-w-sm">
+             <h2 class="text-3xl md:text-[38px] lg:text-4xl font-bold">Accept payments any country in this whole universe
+             </h2>
+             <p class="mt-4 text-[#8888]">Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
+             </p>
+             <ul class="mt-6  lg:-ml-4">
+               <li class="flex items-center mb-2 rounded px-4"> <img class="mr-3" src="./images/checkmark-circle.svg" alt="">Supporting more than 119 country world</li class="flex items-center mb-2 rounded px-4">
+               <li class="flex items-center mb-2 rounded px-4"> <img class="mr-3" src="./images/checkmark-circle.svg" alt="">Open transaction with more than currencies</li class="flex items-center mb-2 rounded px-4">
+               <li class="flex items-center  rounded px-4"> <img class="mr-3" src="./images/checkmark-circle.svg" alt="">Customer Service with 79 languages</li>
+             </ul>
+           </div>
+         </div>
+        </div>
+     </div>
+        </div>
+       
+
+        
+        <script src="./index.js"></script>
   </body>
 </html>

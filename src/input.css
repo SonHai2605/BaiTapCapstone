@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .home-active::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 0px;
+      height: 2px;
+      background: linear-gradient(to right, #f9a826, #ff5e5e);
+      border-radius: 10px;
+    }
+  }
+  @layer components{
+    .meta{
+        @apply flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg
+    }
+}
+@layer{
+  .icon{
+    @apply h-6 w-6
+  }
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply font-merriweather;
+  }
+}
+
+@layer{
+  .header-sticky {
+    @apply bg-white bg-opacity-100 transition-all 
+  }
+
+}
